@@ -23,3 +23,21 @@ Avastatud andmekvaliteedi probleemid ja parandused
 
 **Recommendations**
 
+# Employee Report
+
+## Problem Statement
+HR department wants an overview of active and left employee over time and results of the satisfaction survey.
+
+## Plan
+I wull create a Power BI report to give this overview.
+
+## Data
+Hr department gave me two files:
+- "Employee_Satisfaction_Survey.xlsx"
+- "HR_Dataset.CSV"
+
+### Data Cleaning
+I checked data for uniqueness, formats and outliers.
+Survey dataset didn`t have a unique key column. I creater a new column "AnswerKey" which combined "Question Round" and "Answer ID"
+In HR dataset, I removed columns with personal data: "First Name", " Last Name" and "Email". Also removed the column "Employment Status" as the data in that column was not up to date according to the HR department.
+Column "Salary" was changed to Decimal Number format
